@@ -1,0 +1,71 @@
+div {
+    outline: 1px solid black;
+}
+
+#home-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#topbar-wrap {
+    width: 100%;
+    height: 10%;
+}
+
+#navbar-wrap {
+    width: 100%;
+    height: 10%;
+}
+
+#content-wrap {
+    width: 100%;
+    height: auto;
+}
+
+#bottombar-wrap {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+}
+
+#colA-Booking-wrap {
+    float: left;
+    margin-left: 5%;
+    width: 30%;
+    height: 100%;
+}
+
+#colB-Booking-wrap{
+    float: left;
+    width: 30%;
+    height: auto;
+}
+
+#colC-Booking-wrap {
+    float: left;
+    margin-right: 5%;
+    width: 30%;
+    height: auto;
+}
+
+#colA-noBooking-wrap {
+    width: 50%;
+    height: auto;
+}
+
+#colB-noBooking-wrap {
+    width: 30%;
+    height: auto;
+}
+
+#colC-noBooking-wrap {
+    width: 20%;
+    height: auto;
+}
+
+#contentBox-wrap {
+    width: 30%;
+    height: 100%;
+}
