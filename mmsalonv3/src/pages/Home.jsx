@@ -1,4 +1,5 @@
-import './Home.css'
+import './SiteStructure.css';
+
 
 const Home = () => {
 
