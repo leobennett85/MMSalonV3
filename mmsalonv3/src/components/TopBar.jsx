@@ -1,7 +1,14 @@
+import Logo from '../assets/logo.svg'
+import DrawWiggle from './drawing/DrawWiggle'
+import './topbar.css'
+
 const TopBar = () => {
     return (
         <>
-            TOPBAR
+            <DrawWiggle />
+            <div id="tbFullWrap">
+                <img id="tbLogo" src={Logo} />
+            </div>
         </>
     )
 }
