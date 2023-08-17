@@ -1,7 +1,9 @@
 const Booking = () => {
-    <>
-        BOOKING
-    </>
+    return (
+        <>
+            BOOKING
+        </>
+    )
 }
 
 export default Booking;

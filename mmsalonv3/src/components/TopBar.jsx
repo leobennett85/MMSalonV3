@@ -1,7 +1,9 @@
 const TopBar = () => {
-    <>
-        TOPBAR
-    </>
+    return (
+        <>
+            TOPBAR
+        </>
+    )
 }
 
 export default TopBar;

@@ -1,7 +1,9 @@
 const ContentBox = () => {
-    <>
-        CONTENTBOX
-    </>
+    return (
+        <>
+            CONTENTBOX
+        </>
+    )
 }
 
 export default ContentBox;
