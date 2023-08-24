@@ -4,9 +4,9 @@ import './topbar.css'
 const TopBar = () => {
     return (
         <>
-            <div id="tbFullWrap">
-                <img id="tbLogo" src={Logo} />
-                <div id="tbMenu">
+            <div className="tbFullWrap">
+                <img className="tbLogo" src={Logo} />
+                <div className="tbMenu">
                     "When you look good you feel good"
                 </div>
             </div>

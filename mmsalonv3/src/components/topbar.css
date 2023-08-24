@@ -1,16 +1,16 @@
-#tbFullWrap {
+.tbFullWrap {
     display: flex;
     align-items:flex-start;
     height: 100%;
     width: 100%;
 }
 
-#tbLogo {
+.tbLogo {
     height: 200%;
     width: auto;
 }
 
-#tbMenu {
+.tbMenu {
     width: 10%;
     height: 100%;
     position: absolute;

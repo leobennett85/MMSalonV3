@@ -2,70 +2,70 @@ div {
     outline: 1px solid black;
 }
 
-#home-wrap {
+.home-wrap {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-#topbar-wrap {
+.topbar-wrap {
     width: 100%;
     height: 10%;
 }
 
-#navbar-wrap {
+.navbar-wrap {
     width: 100%;
     height: 10%;
 }
 
-#content-wrap {
+.content-wrap {
     width: 100%;
     height: auto;
 }
 
-#bottombar-wrap {
+.bottombar-wrap {
     position: absolute;
     width: 100%;
     height: 10%;
     bottom: 0;
 }
 
-#colA-showbooking-wrap {
+.colA-showbooking-wrap {
     float: left;
     margin-left: 5%;
     width: 30%;
     height: 100%;
 }
 
-#colB-showbooking-wrap{
+.colB-showbooking-wrap{
     float: left;
     width: 30%;
     height: auto;
 }
 
-#colC-showbooking-wrap {
+.colC-showbooking-wrap {
     float: left;
     margin-right: 5%;
     width: 30%;
     height: auto;
 }
 
-#colA-hiddenbooking-wrap {
+.colA-hiddenbooking-wrap {
     width: 50%;
     height: auto;
 }
 
-#colB-hiddenbooking-wrap {
+.colB-hiddenbooking-wrap {
     width: 30%;
     height: auto;
 }
 
-#colC-hiddenbooking-wrap {
+.colC-hiddenbooking-wrap {
     width: 20%;
     height: auto;
 }
 
-#contentBox-wrap {
+.contentBox-wrap {
     width: 100%;
     height: 100%;
 }

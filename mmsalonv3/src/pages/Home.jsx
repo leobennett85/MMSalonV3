@@ -9,31 +9,31 @@ const Home = () => {
 
     return (
       <>
-        <div id="home-wrap">
-          <div id="topbar-wrap">
+        <div className="home-wrap">
+          <div className="topbar-wrap">
               <TopBar />
           </div>
 
-          <div id="navbar-wrap">
+          <div className="navbar-wrap">
             <NavBar />
           </div>
 
-          <div id="content-wrap">
-              <div id="colA-showbooking-wrap">
-                  <div id="contentBox-wrap">
+          <div className="content-wrap">
+              <div className="colA-showbooking-wrap">
+                  <div className="contentBox-wrap">
                     <ContentBox />
                     <ContentBox />
                   </div>
               </div>
-              <div id="colB-showbooking-wrap">
+              <div className="colB-showbooking-wrap">
                 video
               </div>
-              <div id="colC-showbooking-wrap">
+              <div className="colC-showbooking-wrap">
                 <Booking />
               </div>
           </div>
 
-          <div id="bottombar-wrap">
+          <div className="bottombar-wrap">
               <BottomBar />
           </div>
         </div>
