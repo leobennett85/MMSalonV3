@@ -1,4 +1,5 @@
 import './SiteStructure.css'
+import '../components/zero.css'
 import Booking from '../components/Booking'
 import BottomBar from '../components/BottomBar'
 import ContentBox from '../components/ContentBox'

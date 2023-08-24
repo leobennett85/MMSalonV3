@@ -6,7 +6,7 @@ const TopBar = () => {
         <>
             <div className="tbFullWrap">
                 <img className="tbLogo" src={Logo} />
-                <div className="tbMenu">
+                <div className="tbMenu center-ver-hor">
                     "When you look good you feel good"
                 </div>
             </div>

@@ -11,8 +11,8 @@
 }
 
 .tbMenu {
-    width: 10%;
+    width: auto;
     height: 100%;
-    position: absolute;
-    right: 0px;
+    position: sticky;
+    left: 100%;
 }
