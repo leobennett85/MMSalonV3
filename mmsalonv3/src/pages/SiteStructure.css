@@ -30,42 +30,42 @@ div {
     bottom: 0;
 }
 
-#colA-Booking-wrap {
+#colA-showbooking-wrap {
     float: left;
     margin-left: 5%;
     width: 30%;
     height: 100%;
 }
 
-#colB-Booking-wrap{
+#colB-showbooking-wrap{
     float: left;
     width: 30%;
     height: auto;
 }
 
-#colC-Booking-wrap {
+#colC-showbooking-wrap {
     float: left;
     margin-right: 5%;
     width: 30%;
     height: auto;
 }
 
-#colA-noBooking-wrap {
+#colA-hiddenbooking-wrap {
     width: 50%;
     height: auto;
 }
 
-#colB-noBooking-wrap {
+#colB-hiddenbooking-wrap {
     width: 30%;
     height: auto;
 }
 
-#colC-noBooking-wrap {
+#colC-hiddenbooking-wrap {
     width: 20%;
     height: auto;
 }
 
 #contentBox-wrap {
-    width: 30%;
+    width: 100%;
     height: 100%;
 }

@@ -9,3 +9,10 @@
     height: 200%;
     width: auto;
 }
+
+#tbMenu {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+}

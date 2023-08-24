@@ -1,7 +1,35 @@
 import SvgConstructor from "./SvgConstructor";
 
 const DrawWiggle = () => {
-    // Initial values of Wiggle Path
+     // Define a map to handle initial coords for Wiggle path
+     let initCoords = new Map();
+
+     // M 0 20 C 30 60 70 -30 100 20
+     // Add initial values to initCoords
+     initCoords.set("mxInit", 0);
+     initCoords.set("myInit", 20);
+     initCoords.set("cx1Init", 30);
+     initCoords.set("cy1Init", 60);
+     initCoords.set("cx2Init", 70);
+     initCoords.set("cy2Init", -30);
+     initCoords.set("endPointX", 100);
+     initCoords.set("endPointY", 20);
+ 
+     const updatePath = (map, i) => {
+         const mx = map.get('mxInit');
+         const my = map.get('myInit');
+         const cx1 = map.get('cx1Init');
+         const cy1 = map.get('cy1Init');
+         const cx2 = map.get('cx2Init');
+         const cy2 = map.get('cy2Init');
+         const epX = map.get('endPointX');
+         const epY = map.get('endPointY');
+         const path = "M" + mx + "," + my + " C" + cx1 + "," + cy1 + " " + cx2 + "," + cy2 + " " +  epX + "," + epY;
+ 
+         return path;
+     }
+     
+     // Initial values of Wiggle Path
     const mxInit = 0;
     const myInit = 4;
     const cx1Init = 30;
@@ -10,9 +38,123 @@ const DrawWiggle = () => {
     const cy2Init = 60;
     const endPointX = 100;
     const endPointY = 100;
+     
+     // Create newCoord maps for coordinate data
+     const newCoords = {};
+     let mx, my, cx1, cy1, cx2, cy2, epX, epY;
+ 
+     // A function to alter coords
+     const changeInitCoord = (key, coord, i) => {
+             switch (key) {
+                 case 'mxInit':
+                     console.log(i + ": " + "Before: " + key + ": " + coord);
+                     mx = coord + 1;
+                     console.log(i + ": " + "After: " + key + ": " + mx);
+                     return mx;
+ 
+                 case 'myInit':
+                     console.log(i + ": " + "Before: " + key + ": " + coord);
+                     if (i % 2 == 0 || i == 0) {
+                         my = coord;
+                     } else {
+                         my = coord +1;
+                     };
+                     console.log(i + ": " + "After: " + key + ": " + my);
+                     return my;
+ 
+                 case 'cx1Init':
+                     console.log(i + ": " + "Before: " + key + ": " + coord);
+                     if (i % 2 == 0 || i == 0) {
+                         cx1 = coord;
+                     } else {
+                         cx1 = coord + 5;
+                     };
+                     console.log(i + ": " + "After: " + key + ": " + cx1);
+                     return cx1;
+ 
+                 case 'cy1Init':
+                     console.log(i + ": " + "Before: " + key + ": " + coord);
+                     if (i % 2 == 0 || i == 0) {
+                         cy1 = coord + 75;
+                     } else {
+                         cy1 = coord - 85;
+                     };
+                     console.log(i + ": " + "After: " + key + ": " + cy1);
+                     return cy1;
+ 
+                 case 'cx2Init':
+                     console.log(i + ": " + "Before: " + key + ": " + coord);
+                     if (i % 2 == 0 || i == 0) {
+                         cx2 = coord;
+                     } else {
+                         cx2 = coord + 5;
+                     };
+                     console.log(i + ": " + "After: " + key + ": " + cx2);
+                     return cx2;
+ 
+                 case 'cy2Init':
+                     console.log(i + ": " + "Before: " + key + ": " + coord);
+                     if (i % 2 == 0 || i == 0) {
+                         cy2 = coord - 80;
+                     } else {
+                         cy2 = coord + 85;
+                     };
+                     console.log(i + ": " + "After: " + key + ": " + cy2);
+                     return cy2;
+ 
+                 case 'endPointX':
+                     console.log(i + ": " + "Before: " + key + ": " + coord);
+                     epX = coord;
+                     console.log(i + ": " + "After: " + key + ": " + epX);
+                     return epX;
+ 
+                 case 'endPointY':
+                     console.log(i + ": " + "Before: " + key + ": " + coord);
+                     if (i % 2 == 0 || i == 0) {
+                         epY = coord;
+                     } else {
+                         epY = coord - 1;
+                     };
+                     console.log(i + ": " + "After: " + key + ": " + epY);
+                     return epY;
+             }
+         }
+         
+     for (let i = 0; i < 100; i++) {
+         const mapName = `newCoords${i}`;
+         newCoords[mapName] = new Map();
+         if (i === 0) {
+             for (const [key, coord] of initCoords) {
+                 newCoords[mapName].set(key, coord);
+             };
+             console.log("New Map Name: " + mapName);
+             console.log([...newCoords[mapName].entries()]);
+         } else if (i > 0) {
+             const oldI = i - 1;
+             const prevMap = `newCoords${oldI}`;
+             for (const [key, coord] of newCoords[prevMap]) {
+                 newCoords[mapName].set(key, coord);
+             };
+             console.log("New Map Name: " + mapName);
+             for (const [key, coord] of newCoords[mapName]) {
+                 const currentKey = key;
+                 const currentCoord = coord;
+                 console.log("Current Key: " + currentKey);
+                 console.log("Current Coord: " + currentCoord);
+                 const changedCoord = changeInitCoord(currentKey, currentCoord, i);
+                 console.log("Changed Coord: " + changedCoord);
+                 newCoords[mapName].set(currentKey, changedCoord);
+             };
+             console.log("New Map Name: " + mapName);
+             console.log("New Map Entries: " + [...newCoords[mapName].entries()])
+
+         };
+     };   
+    
 
     // Define Initial Path
     const initPath = "M" + mxInit + "," + myInit + " C" + cx1Init + "," + cy1Init + " " + cx2Init + "," + cy2Init + " " +  endPointX + "," + endPointY;
+    console.log("The Initial Path:" + initPath);
 
     const pathD1 = "M 0 5 C 30 60 70 -30 100 100"; // 0
 
@@ -72,7 +214,7 @@ const DrawWiggle = () => {
                 addedPath = {pathD3}
             />
 
-            {/* SVG 3 */}
+            {/* SVG 3 /}
             <SvgConstructor 
                 initialSvgId = "initialWiggle" 
                 initialSvgHeight = "100%"
@@ -83,8 +225,8 @@ const DrawWiggle = () => {
                 initialPathFill = "none"
                 initialPathStroke = "black"
                 initialPathStrokeWidth = "0.05"
-                initialPathD = {pathD4}
-                addedPath = {pathD5}
+                initialPathD = {}
+                addedPath = {}
             />
             {/* SVG 4 */}
             <SvgConstructor 

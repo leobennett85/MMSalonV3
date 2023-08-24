@@ -19,16 +19,16 @@ const Home = () => {
           </div>
 
           <div id="content-wrap">
-              <div id="colA-Booking-wrap">
+              <div id="colA-showbooking-wrap">
                   <div id="contentBox-wrap">
                     <ContentBox />
                     <ContentBox />
                   </div>
               </div>
-              <div id="colB-Booking-wrap">
+              <div id="colB-showbooking-wrap">
                 video
               </div>
-              <div id="colC-Booking-wrap">
+              <div id="colC-showbooking-wrap">
                 <Booking />
               </div>
           </div>
