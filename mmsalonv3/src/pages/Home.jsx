@@ -10,6 +10,11 @@ const Home = () => {
 
     return (
       <>
+
+        <div className="booking-wrap-hide zFront">
+          <Booking />
+        </div>
+
         <div className="home-wrap">
           <div className="topbar-wrap">
               <TopBar />
@@ -24,13 +29,12 @@ const Home = () => {
                   <div className="contentBox-wrap">
                     <ContentBox />
                     <ContentBox />
+                    <ContentBox />
+                    <ContentBox />
                   </div>
               </div>
               <div className="colB-showbooking-wrap">
                 video
-              </div>
-              <div className="colC-showbooking-wrap">
-                <Booking />
               </div>
           </div>
 

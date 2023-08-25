@@ -3,3 +3,7 @@
     justify-content: center; /* Horizontal centering */
     align-items: center; /* Vertical centering */
 }
+
+.zFront {
+    z-index: 1;
+}

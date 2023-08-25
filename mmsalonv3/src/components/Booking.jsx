@@ -1,7 +1,9 @@
 const Booking = () => {
     return (
         <>
-            BOOKING
+            <div className="bFullWrap">
+                BOOK NOW
+            </div>
         </>
     )
 }

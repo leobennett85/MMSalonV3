@@ -3,7 +3,7 @@ import './ContentBox.css';
 const ContentBox = () => {
     return (
         <>
-            <div className="cbFull-wrap">
+            <div className="cbFullWrap">
                 CONTENTBOX
             </div>
         </>
