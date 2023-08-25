@@ -4,7 +4,7 @@ import './topbar.css'
 const TopBar = () => {
     return (
         <>
-            <div className="tbFullWrap">
+            <div className="tbFull-Wrap">
                 <img className="tbLogo" src={Logo} />
                 <div className="tbMenu center-ver-hor">
                     "When you look good you feel good"
