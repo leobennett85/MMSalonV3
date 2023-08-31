@@ -6,11 +6,13 @@ import ContentBox from '../components/ContentBox'
 import NavBar from '../components/NavBar'
 import TopBar from '../components/TopBar'
 
+import Login from '../components/login/Login'
+
 const Home = () => {
 
     return (
       <>
-
+        <Login />
         <div className="booking-wrap-hide zFront">
           <Booking />
         </div>
@@ -18,6 +20,7 @@ const Home = () => {
         <div className="home-wrap">
           <div className="topbar-wrap">
               <TopBar />
+              
           </div>
 
           <div className="navbar-wrap">
@@ -42,6 +45,7 @@ const Home = () => {
               <BottomBar />
           </div>
         </div>
+
       </>
     );
 }

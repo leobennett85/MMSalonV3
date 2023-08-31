@@ -1,0 +1,23 @@
+.login-wrap {
+    z-index: 2;
+    position: fixed;
+    background-color: white;
+    top: 25%;
+    height: 40vh;
+    width: 80vw; 
+    margin-right: 10vw;
+    margin-left: 10vw;
+    padding: 2vh;
+    display: flex;
+}
+
+.login-pic {
+    height: 100%;
+    width: 50%;
+}
+
+.login-form-wrap {
+    height: 100%;
+    width: 50%;
+
+}
