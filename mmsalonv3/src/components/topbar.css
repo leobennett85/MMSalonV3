@@ -6,7 +6,8 @@
 }
 
 .tbLogo {
-    height: 200%;
+    position: absolute;
+    height: 15vh;
     width: auto;
 }
 
