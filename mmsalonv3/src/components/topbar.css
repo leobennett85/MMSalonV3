@@ -3,12 +3,7 @@
     align-items:flex-start;
     height: 100%;
     width: 100%;
-}
-
-.tbLogo {
-    position: absolute;
-    height: 15vh;
-    width: auto;
+    background: #ffffff;
 }
 
 .tbMenu {

@@ -1,0 +1,32 @@
+.mFullWrap {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+.itemFullWrap {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 10%;
+    width: 100%;
+}
+
+.servicesFullWrap {
+    background: #000;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(222, 253, 218), rgb(199, 255, 192));
+    clip-path: polygon(0% 0%, 100% 0%, 0% 3000%, 0% 100%);
+    outline: 1px solid #000;
+}
+
+.productsFullWrap {
+    background: #eceeff;
+}
+
+.galleryFullWrap {
+    background: #ffe7f9;
+}
+
+.mediaFullWrap {
+    background: #fdffd5;
+}

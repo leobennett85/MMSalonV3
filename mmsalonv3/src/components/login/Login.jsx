@@ -1,5 +1,4 @@
 import './Login.css'
-import '../../components/zero.css'
 
 function Login() {
     return (
@@ -8,7 +7,7 @@ function Login() {
             <div className="login-pic">
                 PICTURE
             </div>
-            <div className="login-form-wrap center-ver-hor">
+            <div className="login-form-wrap">
                 FORM
             </div>
         </div>

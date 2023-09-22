@@ -1,12 +1,11 @@
-import Logo from '../assets/logobw.svg'
+
 import './topbar.css'
 
 const TopBar = () => {
     return (
         <>
-            <div className="tbFullWrap center-ver-hor">
-                <img className="tbLogo" src={Logo} />
-                <div className="tbMenu center-ver-hor">
+            <div className="tbFullWrap">
+                <div className="tbMenu">
                     "When you look good you feel good"
                 </div>
             </div>

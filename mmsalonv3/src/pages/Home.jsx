@@ -1,11 +1,8 @@
 import './SiteStructure.css'
-import '../components/zero.css'
-import Booking from '../components/Booking'
-import BottomBar from '../components/BottomBar'
-import ContentBox from '../components/ContentBox'
-import NavBar from '../components/NavBar'
+import Logo from '../components/logo/Logo'
 import TopBar from '../components/TopBar'
-
+import Menu from '../components/menu/Menu'
+import BottomBar from '../components/BottomBar'
 import Login from '../components/login/Login'
 
 const Home = () => {
@@ -13,36 +10,19 @@ const Home = () => {
     return (
       <>
         <Login />
-        <div className="booking-wrap-hide zFront">
-          <Booking />
-        </div>
+        <Logo />
 
         <div className="home-wrap">
           <div className="topbar-wrap">
-              <TopBar />
-              
+            <TopBar />
           </div>
 
-          <div className="navbar-wrap">
-            <NavBar />
-          </div>
-
-          <div className="content-wrap">
-              <div className="colA-showbooking-wrap">
-                  <div className="contentBox-wrap">
-                    <ContentBox />
-                    <ContentBox />
-                    <ContentBox />
-                    <ContentBox />
-                  </div>
-              </div>
-              <div className="colB-showbooking-wrap">
-                video
-              </div>
+          <div className="menu-wrap">
+            <Menu />
           </div>
 
           <div className="bottombar-wrap">
-              <BottomBar />
+            <BottomBar />
           </div>
         </div>
 

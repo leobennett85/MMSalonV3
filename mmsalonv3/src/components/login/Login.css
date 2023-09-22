@@ -1,5 +1,6 @@
 .login-wrap {
     z-index: 2;
+    display: none;
     position: fixed;
     background-color: white;
     top: 25%;
@@ -8,7 +9,6 @@
     margin-right: 10vw;
     margin-left: 10vw;
     padding: 2vh;
-    display: flex;
 }
 
 .login-pic {
